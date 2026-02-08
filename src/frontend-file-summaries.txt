@@ -1,0 +1,18 @@
+{
+  "frontend/src/index.css": "Global styles with luxury-minimal OKLCH color system (warm neutrals), custom font imports (Playfair Display serif + Inter sans), smooth scroll behavior, and fade-in animation utilities for subtle motion.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with luxury-minimal design tokens (warm neutral palette), custom serif/sans font families, subtle shadows, and minimal border radius values.",
+  "frontend/index.html": "HTML entry point with updated title, favicon reference to generated personal mark, and root div for React mounting.",
+  "frontend/src/App.tsx": "Root application component that renders the single-page LandingPage component.",
+  "frontend/src/components/LandingPage.tsx": "Main landing page composition that renders all five sections (Hero, About, Skills, Vision, Contact) in order with sticky navigation and footer.",
+  "frontend/src/components/Nav/StickyNav.tsx": "Minimal sticky navigation header with smooth scroll anchor links to all five sections, subtle backdrop blur on scroll, and personal mark logo.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero section with \"Krishna Shankar\" headline, tagline \"Education Professional | Technology-Oriented | Continuous Learner\", corporate headshot portrait (cropped mid-torso upward with object-top positioning, no effects/borders), hero texture background, personal mark, and \"Email Me\" CTA button using mailto link to krishnashankar7070@gmail.com with fade-in animations.",
+  "frontend/src/components/sections/AboutSection.tsx": "Background section with \"Background\" heading and three paragraphs of corporate, polished narrative about teaching experience, technology exploration, and professional evolution, using reveal animations and avoiding \"About Me\" phrasing.",
+  "frontend/src/components/sections/SkillsSection.tsx": "Skills/What I Do section displaying all five skill areas (Teaching & Education, Communication & Language, Digital Tools & AI, Creative Thinking, Continuous Learning) in a responsive grid with icons and descriptions.",
+  "frontend/src/components/sections/VisionSection.tsx": "Vision/Philosophy section with three paragraphs about learning evolution and the intersection of education and technology, using reveal animations.",
+  "frontend/src/components/sections/ContactSection.tsx": "Contact section with welcoming copy and clearly visible on-page contact details (\"You can reach me at:\" followed by clickable email and phone links) styled in a minimal, clean, corporate manner with no buttons, WhatsApp icons, or social media icons.",
+  "frontend/src/components/Footer.tsx": "Minimal footer with copyright notice and caffeine.ai attribution with heart icon.",
+  "frontend/src/hooks/useFadeInOnView.ts": "Custom hook using IntersectionObserver to apply subtle fade-in animations to elements with 'reveal' class as they enter viewport, now properly handling nullable HTMLElement refs.",
+  "frontend/src/hooks/useMailtoComposer.ts": "Helper hook to construct safe mailto URLs with optional subject and body parameters for the contact form.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks when backend functionality is added.",
+  "frontend/src/config/heroPortrait.ts": "Configuration file exporting the hero portrait asset path, now pointing to the properly cropped Krishna Shankar portrait (20230909_152253-4-headshot.dim_800x800.jpg) with full head, face, shoulders, and upper torso visible."
+}

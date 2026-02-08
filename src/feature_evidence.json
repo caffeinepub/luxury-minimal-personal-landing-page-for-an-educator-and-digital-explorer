@@ -1,0 +1,57 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-hero-portrait-to-use-only-the-newly-uploaded-image-file-20230909-152253-4-jpg-no-stock-placeholder-other-images-while-keeping-the-hero-section-s-title-tagline-cta-layout-fonts-colors-and-spacing-unchanged",
+      "featureTitle": "Update the Hero portrait to use only the newly uploaded image file \"20230909_152253-4.jpg\" (no stock/placeholder/other images) while keeping the Hero section’s title, tagline, CTA, layout, fonts, colors, and spacing unchanged.",
+      "files": [
+        "frontend/src/config/heroPortrait.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-24"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-adjust-the-hero-portrait-crop-for-the-uploaded-image-so-the-upper-portion-head-and-face-is-fully-visible-and-the-crop-does-not-remove-the-head-shoulders-or-upper-torso-keep-a-clean-professional-corporate-headshot-look-and-maintain-the-existing-luxury-minimal-style-no-filters-effects-borders-frames",
+      "featureTitle": "Adjust the hero portrait crop for the uploaded image so the upper portion (head and face) is fully visible and the crop does not remove the head, shoulders, or upper torso; keep a clean, professional corporate headshot look and maintain the existing luxury-minimal style (no filters/effects/borders/frames).",
+      "files": [],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-25"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-keep-the-existing-hero-portrait-integration-mechanism-intact-hero-portrait-path-in-frontend-src-config-heroportrait-ts-and-the-current-herosection-rendering-and-update-only-the-portrait-asset-reference-so-the-hero-uses-the-new-uploaded-photo-cropped-derivative",
+      "featureTitle": "Keep the existing hero portrait integration mechanism intact (HERO_PORTRAIT_PATH in frontend/src/config/heroPortrait.ts and the current HeroSection rendering) and update only the portrait asset reference so the Hero uses the new uploaded photo/cropped derivative.",
+      "files": [
+        "frontend/src/config/heroPortrait.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-26"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

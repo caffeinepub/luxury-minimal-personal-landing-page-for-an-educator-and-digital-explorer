@@ -1,0 +1,50 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T19:12:43.583Z",
+  "summary": "The diff updates HERO_PORTRAIT_PATH to point to a cropped headshot derivative, but there is insufficient evidence that the actual portrait asset was added/updated and REQ-26’s constraint that only heroPortrait.ts be updated is violated by additional modified files.",
+  "missing_requirements": [
+    {
+      "id": "REQ-24",
+      "requirement": "Update the Hero portrait to use only the newly uploaded image file \"20230909_152253-4.jpg\" (or a cropped derivative) with no other portrait/stock/placeholder image referenced.",
+      "reason": "The config path is updated to a cropped derivative filename, but the diff summary shows no added/updated image asset file, so it cannot be confirmed that the displayed hero portrait actually comes from the uploaded image rather than a missing/broken or pre-existing asset.",
+      "evidence": [
+        "frontend/src/config/heroPortrait.ts"
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "requirement": "Adjust the hero portrait crop so the full head/face is visible and shoulders/upper torso are retained, with no filters/effects/borders/frames.",
+      "reason": "The diff only changes a string path; it does not include the image itself or any verifiable change to the crop/framing. The filename suggests a crop, but the crop compliance cannot be verified from the provided diff summary.",
+      "evidence": [
+        "frontend/src/config/heroPortrait.ts"
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "requirement": "Keep HeroSection rendering intact and update only the portrait asset reference so the Hero uses the new uploaded photo/cropped derivative (heroPortrait.ts should be the only code/config location updated).",
+      "reason": "In addition to heroPortrait.ts, the diff summary shows other files modified, so the acceptance criterion that heroPortrait.ts is the only updated code/config location is not satisfied as written.",
+      "evidence": [
+        "frontend/src/config/heroPortrait.ts",
+        "frontend-file-summaries.txt",
+        "project_state.json"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Updated repository metadata/summary files unrelated to the requested hero portrait asset reference change.",
+      "reason": "The BuildRequest restricts changes to updating only the hero portrait asset reference (and explicitly calls out heroPortrait.ts as the only code/config update). Modifying these additional files was not requested.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/config/heroPortrait.ts",
+    "project_state.json"
+  ]
+}

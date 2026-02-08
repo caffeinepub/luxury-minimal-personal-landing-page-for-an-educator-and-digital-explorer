@@ -1,0 +1,308 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 17,
+  "summary": "Modern luxury-minimal personal website/landing page for an India-based multi-skilled educator and digital explorer, designed to build a personal brand and showcase skills, philosophy, and contact info (including visible email + phone) for schools, edtech, collaborators, and recruiters.",
+  "architectural_notes": [
+    "Target as a calm, premium, future-focused luxury-minimal aesthetic with neutral palette and restrained animations.",
+    "Single-page/landing-page structure with clear information hierarchy and one primary CTA.",
+    "Hero section headline text must be \"Krishna Shankar\"; no changes to layout, design, fonts, colors, or animations when applying this update.",
+    "Edits must be minimal/diff-only: do not regenerate the entire site or change layout, colors, typography, background, spacing, or overall luxury-minimal aesthetic.",
+    "Hero should be prepared to support an optional clean, portrait-style profile image if/when uploaded.",
+    "Hero tagline text to add directly below the hero title: “Education Professional | Technology-Oriented | Continuous Learner” (no redesign; keep existing typography/layout).",
+    "Insert the user’s uploaded photo into the Hero section as a clean corporate headshot (mid-torso crop if needed), positioned centered or neatly beside the name; no filters/effects/borders/frames; blend naturally with existing palette.",
+    "Contact section must display clearly visible, professional contact details including clickable email (mailto) and clickable phone (tel).",
+    "Do not add WhatsApp icons or social media icons; do not add/remove sections; do not change fonts/colors/spacing/layout (diff-only changes).",
+    "Update ONLY the Hero section image: replace the current hero image with the user’s uploaded portrait (no placeholders/stock/other images); allow mid-torso-and-up crop if needed; keep a professional corporate look; do not change any text/buttons/tagline/layout/colors/design; preserve luxury-minimal alignment with existing hero layout."
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "imageRequirements": "## Edit Images\n- Head-and-shoulders corporate crop with full head/face visible; keep shoulders and upper torso; rotate to upright if needed; no filters/effects/borders/frames (20230909_152253-4.jpg > 20230909_152253-4-headshot.dim_800x800.jpg)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-personal-website-landing-page-portfolio-with-the-following-sections-in-this-order-hero-about-what-i-do-skills-vision-philosophy-contact-ensure-the-page-is-easy-to-scan-and-communicates-value-quickly-to-schools-education-institutions-edtech-platforms-creative-collaborators-recruiters-and-founders",
+      "title": "Create a single-page personal website (landing page/portfolio) with the following sections in this order: Hero, About, What I Do / Skills, Vision / Philosophy, Contact. Ensure the page is easy to scan and communicates value quickly to schools/education institutions, edtech platforms, creative collaborators, recruiters, and founders.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-luxury-minimal-visual-design-system-across-the-entire-site-white-off-white-background-soft-neutral-palette-beige-warm-grey-muted-charcoal-generous-whitespace-and-elegant-typography-modern-serif-for-headings-clean-sans-serif-for-body-keep-the-ui-calm-confident-premium-and-future-focused",
+      "title": "Implement the luxury-minimal visual design system across the entire site: white/off-white background, soft neutral palette (beige, warm grey, muted charcoal), generous whitespace, and elegant typography (modern serif for headings, clean sans-serif for body). Keep the UI calm, confident, premium, and future-focused.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-subtle-motion-only-smooth-scrolling-for-in-page-navigation-and-gentle-fade-in-animations-for-section-content-reveal-avoid-any-flashy-or-distracting-effects",
+      "title": "Add subtle motion only: smooth scrolling for in-page navigation and gentle fade-in animations for section/content reveal. Avoid any flashy or distracting effects.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-write-and-place-the-user-facing-website-copy-in-english-with-a-modern-thoughtful-confident-but-humble-tone-founder-style-clarity-not-exaggerated-include-1-hero-headline-similar-to-educator-creative-thinker-exploring-technology-plus-1-2-lines-of-subtext-summarizing-the-journey-2-a-concise-about-narrative-emphasizing-growth-curiosity-adaptability-and-global-mindset-3-a-skills-what-i-do-list-containing-teaching-education-communication-language-digital-tools-ai-exploration-creative-thinking-problem-solving-continuous-learning-4-vision-philosophy-paragraph-s-on-learning-evolution-and-the-intersection-of-education-and-technology-5-contact-section-copy-that-is-calm-and-welcoming",
+      "title": "Write and place the user-facing website copy in English with a modern, thoughtful, confident-but-humble tone (founder-style clarity; not exaggerated). Include: (1) Hero headline similar to “Educator. Creative Thinker. Exploring Technology.” plus 1–2 lines of subtext summarizing the journey; (2) a concise About narrative emphasizing growth, curiosity, adaptability, and global mindset; (3) a Skills/What I Do list containing: Teaching & Education, Communication & Language, Digital Tools & AI Exploration, Creative Thinking & Problem Solving, Continuous Learning; (4) Vision/Philosophy paragraph(s) on learning, evolution, and the intersection of education and technology; (5) Contact section copy that is calm and welcoming.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-hero-section-with-one-clear-primary-cta-button-labeled-either-connect-with-me-or-explore-my-work-the-cta-must-scroll-to-the-contact-section-or-open-the-email-option-and-be-visually-prominent-but-minimal",
+      "title": "Implement the Hero section with one clear primary CTA button labeled either “Connect with Me” or “Explore My Work”. The CTA must scroll to the Contact section (or open the email option) and be visually prominent but minimal.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-contact-section-as-a-simple-contact-method-without-third-party-services-provide-an-email-placeholder-e-g-a-mailto-link-and-optionally-a-minimal-on-page-form-that-opens-the-user-s-email-client-mailto-rather-than-sending-emails-from-the-app-keep-the-tone-calm-and-welcoming",
+      "title": "Create the Contact section as a simple contact method without third-party services: provide an email placeholder (e.g., a mailto link) and optionally a minimal on-page form that opens the user’s email client (mailto) rather than sending emails from the app. Keep the tone calm and welcoming.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-simple-minimal-in-page-navigation-e-g-top-right-links-or-a-subtle-sticky-header-that-jumps-to-each-section-hero-about-skills-vision-contact-using-anchor-links-preserving-the-minimal-aesthetic",
+      "title": "Add a simple, minimal in-page navigation (e.g., top-right links or a subtle sticky header) that jumps to each section (Hero/About/Skills/Vision/Contact) using anchor links, preserving the minimal aesthetic.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-one-cohesive-creative-theme-interpretation-consistent-with-luxury-minimalist-without-introducing-new-features-define-a-named-neutral-palette-beige-warm-grey-muted-charcoal-variants-type-scale-button-link-styles-and-section-layout-rhythm-and-use-it-consistently-across-all-sections",
+      "title": "Apply one cohesive creative theme interpretation consistent with “luxury minimalist” (without introducing new features): define a named neutral palette (beige/warm grey/muted charcoal variants), type scale, button/link styles, and section layout rhythm, and use it consistently across all sections.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-custom-static-images-that-match-the-luxury-minimal-aesthetic-and-integrate-them-into-the-frontend-as-static-assets-under-frontend-public-assets-generated-using-them-subtly-e-g-hero-accent-favicon-mark",
+      "title": "Generate and include custom static images that match the luxury-minimal aesthetic and integrate them into the frontend as static assets under frontend/public/assets/generated, using them subtly (e.g., hero accent, favicon/mark).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-headline-text-to-exactly-krishna-shankar-and-keep-all-other-hero-section-content-unchanged",
+      "title": "Update the Hero section headline text to exactly \"Krishna Shankar\" and keep all other Hero section content unchanged.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-primary-cta-so-the-button-label-is-exactly-email-me-and-clicking-it-opens-the-user-s-default-email-client-via-a-mailto-link-to-krishnashankar7070-gmail-com-do-not-render-the-email-address-as-visible-text-in-the-hero",
+      "title": "Update the Hero section primary CTA so the button label is exactly \"Email Me\" and clicking it opens the user’s default email client via a mailto link to krishnashankar7070@gmail.com (do not render the email address as visible text in the hero).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-section-to-use-email-as-the-only-contact-method-remove-any-ui-for-phone-whatsapp-and-remove-the-on-page-message-form-provide-a-single-email-contact-action-that-opens-the-default-email-client-addressed-to-krishnashankar7070-gmail-com-without-displaying-the-email-address-as-plain-text",
+      "title": "Update the Contact section to use Email as the only contact method: remove any UI for phone/WhatsApp and remove the on-page message form; provide a single email contact action that opens the default email client addressed to krishnashankar7070@gmail.com, without displaying the email address as plain text.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-revise-the-about-intro-section-copy-to-maintain-a-professional-corporate-global-polished-tone-and-remove-any-phrasing-that-reads-like-placeholders-e-g-avoid-headings-like-about-me-and-avoid-wording-like-about-me-while-keeping-the-section-s-existing-layout-and-styling-intact",
+      "title": "Revise the About/Intro section copy to maintain a professional, corporate, global, polished tone and remove any phrasing that reads like placeholders (e.g., avoid headings like \"About Me\" and avoid wording like \"about me\"), while keeping the section’s existing layout and styling intact.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-prepare-the-hero-section-to-support-an-optional-clean-portrait-style-profile-image-to-be-provided-later-without-changing-the-current-hero-layout-spacing-or-background-when-no-portrait-image-is-configured",
+      "title": "Prepare the Hero section to support an optional clean portrait-style profile image (to be provided later) without changing the current hero layout, spacing, or background when no portrait image is configured.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-to-display-the-tagline-text-exactly-education-professional-technology-oriented-continuous-learner-directly-below-the-hero-title-krishna-shankar-while-preserving-the-existing-premium-corporate-luxury-minimal-typography-and-layout-no-font-color-spacing-layout-redesign",
+      "title": "Update the Hero section to display the tagline text exactly \"Education Professional | Technology-Oriented | Continuous Learner\" directly below the hero title \"Krishna Shankar\", while preserving the existing premium, corporate, luxury-minimal typography and layout (no font/color/spacing/layout redesign).",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-insert-the-provided-uploaded-profile-photo-into-the-hero-section-using-the-existing-optional-portrait-mechanism-and-present-it-in-a-clean-professional-corporate-headshot-style-mid-torso-and-up-crop-if-needed-no-filters-no-effects-no-borders-no-frames-and-visually-blended-with-the-existing-site-palette",
+      "title": "Insert the provided (uploaded) profile photo into the Hero section using the existing optional portrait mechanism, and present it in a clean, professional corporate-headshot style: mid-torso-and-up crop if needed, no filters, no effects, no borders, no frames, and visually blended with the existing site palette.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-hero-section-primary-cta-button-label-is-exactly-email-me-and-that-clicking-it-opens-the-user-s-default-email-client-via-a-mailto-link-to-krishnashankar7070-gmail-com",
+      "title": "Ensure the Hero section primary CTA button label is exactly \"Email Me\" and that clicking it opens the user’s default email client via a mailto link to krishnashankar7070@gmail.com.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-section-to-display-clearly-visible-professional-contact-details-as-plain-on-page-text-not-hidden-behind-a-button-in-the-exact-format-specified-with-the-email-clickable-via-mailto-and-the-phone-number-clickable-via-tel-while-keeping-styling-minimal-clean-and-corporate-and-without-adding-whatsapp-social-icons",
+      "title": "Update the Contact section to display clearly visible, professional contact details as plain on-page text (not hidden behind a button) in the exact format specified, with the email clickable via mailto and the phone number clickable via tel, while keeping styling minimal, clean, and corporate and without adding WhatsApp/social icons.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-only-the-hero-section-portrait-image-to-use-the-user-uploaded-photo-file-20230909-152253-2-jpg-no-placeholders-stock-other-images-the-portrait-must-be-cropped-to-a-professional-corporate-headshot-framing-mid-torso-upward-if-needed-and-must-maintain-the-existing-luxury-minimal-aesthetic-and-alignment-with-the-current-hero-layout",
+      "title": "Update only the Hero section portrait image to use the user-uploaded photo file \"20230909_152253-2.jpg\" (no placeholders/stock/other images). The portrait must be cropped to a professional corporate headshot framing (mid-torso upward if needed) and must maintain the existing luxury-minimal aesthetic and alignment with the current Hero layout.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-portrait-to-use-the-newly-uploaded-user-photo-replacing-the-current-portrait-asset-while-keeping-the-existing-hero-layout-spacing-typography-colors-and-styling-unchanged",
+      "title": "Update the Hero section portrait to use the newly uploaded user photo (replacing the current portrait asset) while keeping the existing Hero layout, spacing, typography, colors, and styling unchanged.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-portrait-image-to-use-the-newly-uploaded-user-photo-file-20230909-152253-3-jpg-as-the-only-hero-portrait-source-no-stock-placeholder-other-images-the-portrait-must-be-cropped-to-a-clean-professional-corporate-headshot-framing-mid-torso-upward-if-needed-with-no-filters-effects-borders-frames-and-must-preserve-the-existing-premium-corporate-luxury-minimal-look",
+      "title": "Update the Hero section portrait image to use the newly uploaded user photo file \"20230909_152253-3.jpg\" as the only hero portrait source (no stock/placeholder/other images). The portrait must be cropped to a clean professional corporate headshot framing (mid-torso upward if needed), with no filters/effects/borders/frames, and must preserve the existing premium, corporate, luxury-minimal look.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-keep-the-existing-hero-portrait-integration-mechanism-intact-hero-portrait-path-in-frontend-src-config-heroportrait-ts-and-the-current-herosection-rendering-and-only-update-the-referenced-portrait-asset-so-the-displayed-image-changes-while-the-hero-layout-and-styling-remain-unchanged-ensure-the-portrait-remains-neatly-aligned-with-the-existing-centered-hero-title-tagline-treatment",
+      "title": "Keep the existing Hero portrait integration mechanism intact (HERO_PORTRAIT_PATH in frontend/src/config/heroPortrait.ts and the current HeroSection rendering), and only update the referenced portrait asset so the displayed image changes while the Hero layout and styling remain unchanged. Ensure the portrait remains neatly aligned with the existing centered hero title/tagline treatment.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-portrait-to-use-only-the-newly-uploaded-image-file-20230909-152253-4-jpg-no-stock-placeholder-other-images-while-keeping-the-hero-section-s-title-tagline-cta-layout-fonts-colors-and-spacing-unchanged",
+      "title": "Update the Hero portrait to use only the newly uploaded image file \"20230909_152253-4.jpg\" (no stock/placeholder/other images) while keeping the Hero section’s title, tagline, CTA, layout, fonts, colors, and spacing unchanged.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-adjust-the-hero-portrait-crop-for-the-uploaded-image-so-the-upper-portion-head-and-face-is-fully-visible-and-the-crop-does-not-remove-the-head-shoulders-or-upper-torso-keep-a-clean-professional-corporate-headshot-look-and-maintain-the-existing-luxury-minimal-style-no-filters-effects-borders-frames",
+      "title": "Adjust the hero portrait crop for the uploaded image so the upper portion (head and face) is fully visible and the crop does not remove the head, shoulders, or upper torso; keep a clean, professional corporate headshot look and maintain the existing luxury-minimal style (no filters/effects/borders/frames).",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-keep-the-existing-hero-portrait-integration-mechanism-intact-hero-portrait-path-in-frontend-src-config-heroportrait-ts-and-the-current-herosection-rendering-and-update-only-the-portrait-asset-reference-so-the-hero-uses-the-new-uploaded-photo-cropped-derivative",
+      "title": "Keep the existing hero portrait integration mechanism intact (HERO_PORTRAIT_PATH in frontend/src/config/heroPortrait.ts and the current HeroSection rendering) and update only the portrait asset reference so the Hero uses the new uploaded photo/cropped derivative.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create luxury-minimal single-page personal website with sections: Hero, About, Skills/What I Do, Vision/Philosophy, Contact",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Hero section with headline, short subtext, and one clear CTA (Connect with Me / Explore My Work)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "About section with concise personal story emphasizing growth, curiosity, adaptability, and professional-human tone",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Skills/What I Do section covering Teaching & Education, Communication & Language, Digital Tools & AI Exploration, Creative Thinking & Problem Solving, Continuous Learning",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Vision/Philosophy section describing beliefs about learning/evolution and the intersection of education and technology",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Contact section with simple contact form or email placeholder and calm welcoming tone",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Visual design system: off-white/white background, soft neutral palette, elegant typography (modern serif headings + clean sans body), generous whitespace",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Subtle UI motion: fade-in transitions and smooth scrolling only",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Content tone guidelines: calm, confident but humble, modern, thoughtful, founder-style clarity (not exaggerated)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Apply targeted hero/contact edits only: set CTA label to “Email Me” with mailto to krishnashankar7070@gmail.com (do not show email as plain text), keep contact as email-only (no WhatsApp/phone), and ensure hero supports an optional portrait image—without changing layout/colors/typography",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Apply quick targeted updates only: add hero tagline under “Krishna Shankar”, insert uploaded corporate headshot photo in hero, ensure CTA label is “Email Me” (mailto), and update Contact section to display visible clickable email + phone (mailto/tel) with minimal corporate styling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Replace/update the Hero section portrait with a newly uploaded user photo (re-upload) while preserving existing luxury-minimal layout and styling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Update the hero portrait configuration so the app references the new portrait asset path (via the existing HERO_PORTRAIT_PATH mechanism).",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Luxury-minimal personal landing page for an educator and digital explorer",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

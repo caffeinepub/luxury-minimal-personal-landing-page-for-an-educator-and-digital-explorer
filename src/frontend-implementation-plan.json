@@ -1,0 +1,55 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update Hero portrait to corrected head-visible crop from uploaded photo",
+  "requirements": [
+    {
+      "id": "REQ-24",
+      "summary": "Switch the Hero portrait to use only the newly uploaded photo (or its cropped derivative) while leaving all Hero text, CTA behavior, layout, and site sections unchanged.",
+      "acceptanceCriteria": [
+        "The hero portrait displayed in the Hero section comes from the uploaded file 20230909_152253-4.jpg (or a cropped derivative generated from it), and no other portrait/stock/placeholder image is referenced for the hero.",
+        "HeroSection text content remains exactly: title \"Krishna Shankar\", tagline \"Education Professional | Technology-Oriented | Continuous Learner\", and CTA label \"Email Me\" with the existing mailto behavior unchanged.",
+        "No other sections (About/Skills/Vision/Contact/Nav/Footer) are modified."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/config/heroPortrait.ts",
+          "operation": "modify",
+          "description": "Update HERO_PORTRAIT_PATH to reference only the new hero portrait asset at /assets/generated/20230909_152253-4-headshot.dim_800x800.jpg (removing the old /assets/20230909_152253-3.jpg reference)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "summary": "Provide a clean, professional head-and-shoulders crop of the uploaded photo so the full head/face is visible and shoulders/upper torso remain, matching the existing luxury-minimal style (no effects).",
+      "acceptanceCriteria": [
+        "The delivered hero portrait framing clearly includes the full head/face and retains shoulders and upper torso (no cut-off at the top of the head).",
+        "The portrait appears clean and professional with no filters, visual effects, borders, or frames.",
+        "Portrait alignment remains consistent with the existing HeroSection behavior (centered) and does not introduce layout/spacing changes beyond the image content itself."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/20230909_152253-4-headshot.dim_800x800.jpg",
+          "operation": "create",
+          "description": "Add the edited/cropped derivative specified in the BuildRequest: head-and-shoulders corporate crop from 20230909_152253-4.jpg with full head/face visible, shoulders and upper torso retained, rotated upright if needed, and no filters/effects/borders/frames."
+        }
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "summary": "Keep the existing Hero portrait integration mechanism intact and only update the portrait asset reference via HERO_PORTRAIT_PATH.",
+      "acceptanceCriteria": [
+        "frontend/src/components/sections/HeroSection.tsx is not modified.",
+        "frontend/src/config/heroPortrait.ts is the only code/config location updated to point HERO_PORTRAIT_PATH to the new portrait asset path.",
+        "The site builds and the hero portrait renders without console errors or broken image links."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/config/heroPortrait.ts",
+          "operation": "modify",
+          "description": "Ensure the integration remains unchanged by only adjusting HERO_PORTRAIT_PATH to /assets/generated/20230909_152253-4-headshot.dim_800x800.jpg; do not modify HeroSection rendering or any other section/component."
+        }
+      ]
+    }
+  ]
+}

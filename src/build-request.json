@@ -1,0 +1,93 @@
+{
+  "kind": "build_request",
+  "title": "Update Hero portrait to newly uploaded photo with corrected head-visible crop",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-24",
+      "text": "Update the Hero portrait to use only the newly uploaded image file \"20230909_152253-4.jpg\" (no stock/placeholder/other images) while keeping the Hero section’s title, tagline, CTA, layout, fonts, colors, and spacing unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Update the Hero section only. Use my uploaded photo (Krishna Shankar portrait) as the hero image.",
+          "Do not change the hero title, tagline, CTA button, layout, fonts, colors, spacing, or any other section.",
+          "The user has uploaded 1 image(s): 20230909_152253-4.jpg."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The hero portrait displayed in the Hero section comes from the uploaded file 20230909_152253-4.jpg (or a cropped derivative generated from it), and no other portrait/stock/placeholder image is referenced for the hero.",
+        "HeroSection text content remains exactly: title \"Krishna Shankar\", tagline \"Education Professional | Technology-Oriented | Continuous Learner\", and CTA label \"Email Me\" with the existing mailto behavior unchanged.",
+        "No other sections (About/Skills/Vision/Contact/Nav/Footer) are modified."
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "text": "Adjust the hero portrait crop for the uploaded image so the upper portion (head and face) is fully visible and the crop does not remove the head, shoulders, or upper torso; keep a clean, professional corporate headshot look and maintain the existing luxury-minimal style (no filters/effects/borders/frames).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Crop the image so the **upper portion, including the head and face, is fully visible**.",
+          "Do not crop out the head, shoulders, or upper torso.",
+          "Maintain the luxury-minimal corporate style."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The delivered hero portrait framing clearly includes the full head/face and retains shoulders and upper torso (no cut-off at the top of the head).",
+        "The portrait appears clean and professional with no filters, visual effects, borders, or frames.",
+        "Portrait alignment remains consistent with the existing HeroSection behavior (centered) and does not introduce layout/spacing changes beyond the image content itself."
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "text": "Keep the existing hero portrait integration mechanism intact (HERO_PORTRAIT_PATH in frontend/src/config/heroPortrait.ts and the current HeroSection rendering) and update only the portrait asset reference so the Hero uses the new uploaded photo/cropped derivative.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Update the Hero section only.",
+          "Do not change the hero title, tagline, CTA button, layout, fonts, colors, spacing, or any other section."
+        ]
+      },
+      "acceptanceCriteria": [
+        "frontend/src/components/sections/HeroSection.tsx is not modified.",
+        "frontend/src/config/heroPortrait.ts is the only code/config location updated to point HERO_PORTRAIT_PATH to the new portrait asset path.",
+        "The site builds and the hero portrait renders without console errors or broken image links."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify frontend/src/components/sections/HeroSection.tsx (keep layout/classes/typography/spacing intact).",
+    "Do not change the Hero title text, tagline text, or CTA button label/behavior.",
+    "Do not change fonts, colors, spacing, background texture, or any other section of the site.",
+    "Do not use any stock, placeholder, or alternative images for the hero portrait; use only the uploaded portrait (with cropping allowed)."
+  ],
+  "nonGoals": [
+    "Changing navigation, About/Skills/Vision/Contact content, or footer.",
+    "Adding new UI controls for portrait positioning.",
+    "Introducing any image effects (filters, frames, borders) or redesigning the Hero layout."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Head-and-shoulders corporate crop with full head/face visible; keep shoulders and upper torso; rotate to upright if needed; no filters/effects/borders/frames (20230909_152253-4.jpg > 20230909_152253-4-headshot.dim_800x800.jpg)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

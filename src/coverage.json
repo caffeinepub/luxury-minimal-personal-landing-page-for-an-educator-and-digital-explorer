@@ -1,0 +1,60 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T19:12:43.586Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 3,
+    "implemented": 3,
+    "items": [
+      {
+        "id": "REQ-24",
+        "summary": "Update the Hero portrait to use only the newly uploaded image file \"20230909_152253-4.jpg\" (no stock/placeholder/other images) while keeping the Hero section’s title, tagline, CTA, layout, fonts, colors, and spacing unchanged.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/config/heroPortrait.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/config/heroPortrait.ts"
+        ]
+      },
+      {
+        "id": "REQ-25",
+        "summary": "Adjust the hero portrait crop for the uploaded image so the upper portion (head and face) is fully visible and the crop does not remove the head, shoulders, or upper torso; keep a clean, professional corporate headshot look and maintain the existing luxury-minimal style (no filters/effects/borders/frames).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/20230909_152253-4-headshot.dim_800x800.jpg"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/20230909_152253-4-headshot.dim_800x800.jpg"
+        ]
+      },
+      {
+        "id": "REQ-26",
+        "summary": "Keep the existing hero portrait integration mechanism intact (HERO_PORTRAIT_PATH in frontend/src/config/heroPortrait.ts and the current HeroSection rendering) and update only the portrait asset reference so the Hero uses the new uploaded photo/cropped derivative.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/config/heroPortrait.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/config/heroPortrait.ts"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/20230909_152253-4-headshot.dim_800x800.jpg",
+    "frontend/src/config/heroPortrait.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
